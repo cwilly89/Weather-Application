@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+         <h1 class="weather">
+  Weather App
+      </h1>
+     
+  
+     <div class="card border-primary mb-3" style="max-width: 18rem">
+           <img src="images/Sunny.png" alt="..." />
+        <div class="card-header"> Current Temperature</div>
+     <h5 class="card-title">Today</h5>
+     <h4>Placentia, CA</h4>
+          
+          <p class="card-text">
+              <h3 id= "current"></h3>
+      <div id="app" 77°F></div>
+          
+          </br>
+          Sunny
+          </p>
+        </div>
+    
+   <form class="search-form" id="search-form">
+     <div class="row">
+      <div class="col-4">
+      <input 
+      type="search"
+         placeholder="Search for a city"
+         autocomplete="off"
+         autofocus="on"
+         id="new-city"
+         class="form-control shadow-sm"
+        
+         />
+    </div>
+  <div class="col-2">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn-primary shadow-sm"
+              />
+            </div>
+          </div>
+
+
+       </form> 
+       <button>
+        Current Location
+      </button>
+       <p class="forecast">5-Day Forecast</p>
+          <div class="card-group">
+        <div class="card">
+          <img src="images/mostlysunny.png" class="card-img-top" alt="Mostly Sunny" />
+          <div class="card-body">
+            <h5 class="card-title">Monday</h5>
+            <p class="card-text">
+            </br>
+            84°F/ 29°C
+        </br>
+        Mostly Sunny
+
+            </p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/partlycloudy.png" class="card-img-top" alt="Partly Cloudy" />
+          <div class="card-body">
+            <h5 class="card-title">Tuesday</h5>
+            <p class="card-text">
+             </br>
+            81°F/ 27°C
+        </br>
+       Partly Cloudy
+            </p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/partlycloudy.png" class="card-img-top" alt="Partly Cloudy" />
+          <div class="card-body">
+            <h5 class="card-title">Wednesday</h5>
+            <p class="card-text">
+              </br>
+            80°F/ 26°C
+        </br>
+       Partly Cloudy
+            </p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/partlycloudy.png" class="card-img-top" alt="Partly Cloudy" />
+          <div class="card-body">
+            <h5 class="card-title">Thursday</h5>
+            <p class="card-text">
+               </br>
+            83°F/ 28°C
+        </br>
+       Partly Cloudy
+            </p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/Sunny.png" class="card-img-top" alt="Sunny" />
+          <div class="card-body">
+            <h5 class="card-title">Friday</h5>
+            <p class="card-text">
+               </br>
+            84°F/ 28°C
+        </br>
+        Sunny
+            </p>
+            
+          </div>
+        </div>
+      
+      
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
